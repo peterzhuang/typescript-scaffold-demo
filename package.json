@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "tsc -v",
-    "build": "tsc",
+    "build": "tsc --build",
     "watch": "tsc -w",
     "webpack": "webpack",
     "dev": "webpack serve"
