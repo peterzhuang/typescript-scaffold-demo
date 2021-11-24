@@ -5,7 +5,7 @@ import * as _ from "lodash";
 export class Main {
     
     render() : string {
-
+      console.log('hello from Main');
         return `
             <div class="mt-4">
               <h2>${emphasizeString("Globoticket Portal", 2)}</h2>
