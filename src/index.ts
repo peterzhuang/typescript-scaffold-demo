@@ -1,9 +1,13 @@
 // TypeScript is highly efficient
 // const Main = require("./app/Main");
 import { Main } from "./app/Main";
+import {defaultState} from "./defaultState";
 
-const message: string = "Hello again typescript!";
+const renderApp = ()=>{
 
-console.log(message);
+    const rendered : string = new Main(defaultState).render();
+    document.getElementById("App").innerHTML = rendered;
 
-new Main().render();
+}
+
+renderApp();
